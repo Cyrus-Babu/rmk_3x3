@@ -27,7 +27,7 @@ layers=2
 # The 10th key is the Encoder Button (Direct Pin), set to toggle Layer 1
 keymap = [
     [
-        ["LC(LS(KC_X))", "F4", "F11"],
+        ["Macro(0)", "F4", "F11"],
         ["PrintScreen", "AudioMute", "Calculator"],
         ["F5", "WwwSearch", "MediaPlayPause"],
         ["TG(1)","_","_"]  # The Encoder Button: Toggles Layer 1 on/off
@@ -53,6 +53,16 @@ resolution = 2
 encoder_map = [
     [ ["AudioVolUp", "AudioVolDown"] ], 
     [ ["BrightnessUp", "BrightnessDown"] ] 
+]
+
+[[behavior.macros]]
+# Sequence for Left Control + Left Alt + X
+operations = [
+    "Press(LCtrl)",
+    "Press(LAlt)",
+    "Tap(X)",
+    "Release(LAlt)",
+    "Release(LCtrl)"
 ]
 
 [ble]
