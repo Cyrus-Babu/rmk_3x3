@@ -7,33 +7,27 @@ manufacturer = "HOOPY"
 chip = "esp32s3"
 
 [matrix]
-# Rows 0-3
 row_pins = ["GPIO1", "GPIO2", "GPIO3", "GPIO4"]
-# Cols 0-2
-# ERROR FIX: Removed GPIO6/7 which are used by the Encoder. 
-# Replaced with GPIO10/11 (or change to your actual free pins).
 col_pins = ["GPIO5", "GPIO10", "GPIO11"] 
 
 [layout]
 rows = 4
 cols = 3
 layers = 2
-
-# Matrix Keymap
 keymap = [
     # Layer 0: Default
     [
-        ["Macro(0)", "F4", "F11"],
+        ["LCtrl(LShift(X))", "F4", "F11"],
         ["PrintScreen", "AudioMute", "Calculator"],
         ["F5", "WwwSearch", "MediaPlayPause"],
-        ["TG(1)", "_", "_"]
+        ["MO(1)", "_", "_"]
     ],
     # Layer 1: Brightness/Utility
     [
         ["_", "_", "_"],
         ["_", "_", "_"],
         ["_", "LAlt(F4)", "_"],
-        ["TG(1)", "_", "_"]
+        ["_", "_", "_"]
     ]
 ]
 
@@ -50,15 +44,6 @@ encoder_keymap = [
 pin_a = "GPIO6"
 pin_b = "GPIO7"
 resolution = 2
-
-[[behavior.macros]]
-# Macro(0): Sequence for Ctrl + Alt + X
-operations = [
-    "Press(LCtrl)",
-    "Press(LAlt)",
-    "Tap(X)",
-    "Release(LAlt)",
-    "Release(LCtrl)"
 ]
 
 [ble]
