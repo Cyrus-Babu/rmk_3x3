@@ -1,9 +1,9 @@
 [keyboard]
-name = "MACRO"
-product_name = "Macropad"
+name = "macro"
+product_name = "macropad"
 vendor_id = 0x4c4b
 product_id = 0x4602
-manufacturer = "HOOPY"
+manufacturer = "hoopy"
 chip = "esp32s3"
 
 [matrix]
@@ -18,7 +18,7 @@ layers = 2
 keymap = [
     # Layer 0: Default
     [
-        ["LCtrl(LShift(X))", "F4", "F11"],
+        ["WM(X, LCtrl | LShift)", "F4", "F11"],
         ["PrintScreen", "AudioMute", "Calculator"],
         ["F5", "WwwSearch", "MediaPlayPause"],
         ["MO(1)", "_", "_"]
