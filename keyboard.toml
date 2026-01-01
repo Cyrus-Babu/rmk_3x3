@@ -14,21 +14,26 @@ col_pins = ["GPIO5", "GPIO6", "GPIO7"]
 rows = 4
 cols = 3
 layers = 2
-keymap = [
-    # Layer 0: Default
-    [
-        ["WM(X, LCtrl | LShift)", "F4", "F11"],
-        ["PrintScreen", "AudioMute", "Calculator"],
-        ["F5", "WwwSearch", "MediaPlayPause"],
-        ["MO(1)", "_", "_"]
-    ],
-    # Layer 1: Brightness/Utility
-    [
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "LAlt(F4)", "_"],
-        ["_", "_", "_"]
-    ]
+[layout]
+rows = 4
+cols = 3
+layers = 2
+
+# Define keys for each layer
+[[layout.layer]]
+keys = [
+    ["LCtrl(LShift(X))", "F4", "F11"],
+    ["PrintScreen", "AudioMute", "Calculator"],
+    ["F5", "WwwSearch", "MediaPlayPause"],
+    ["MO(1)", "_", "_"]
+]
+
+[[layout.layer]]
+keys = [
+    ["_", "_", "_"],
+    ["_", "_", "_"],
+    ["_", "LAlt(F4)", "_"],
+    ["_", "_", "_"]
 ]
 [[layer]]  # Layer 0
 encoders = [["AudioVolUp", "AudioVolDown"]]
