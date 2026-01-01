@@ -19,10 +19,8 @@ output_pins = ["GPIO4", "GPIO5", "GPIO6"]
 # But if it's separate, we can use direct pin.
 # PRO TIP: Wire the Encoder Button as "Row 0, Col 3" (extend matrix) or just a direct pin.
 # Let's assume you wire the Encoder Button to GPIO8 connecting to GND (Direct Pin).
-direct_pins = ["GPIO8"]
-
 [layout]
-rows = 3
+rows = 4
 cols = 3
 layers=2
 # Layer 0: Volume Control + Standard Keys
