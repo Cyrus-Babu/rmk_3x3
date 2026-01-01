@@ -58,4 +58,4 @@ sensor_map = [
 [ble]
 enabled = true
 name = "Macropad"
-battery_pin = "GPIO9"
+battery_adc_pin = "GPIO9"
