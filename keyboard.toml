@@ -7,8 +7,7 @@ manufacturer = "RMK User"
 chip = "esp32s3"
 
 [matrix]
-rows = 3
-cols = 3
+
 # Matches the wiring table above
 input_pins = ["GPIO1", "GPIO2", "GPIO3"]
 output_pins = ["GPIO4", "GPIO5", "GPIO6"]
@@ -23,6 +22,9 @@ output_pins = ["GPIO4", "GPIO5", "GPIO6"]
 direct_pins = ["GPIO8"]
 
 [layout]
+rows = 3
+cols = 3
+layers=2
 # Layer 0: Volume Control + Standard Keys
 # The 10th key is the Encoder Button (Direct Pin), set to toggle Layer 1
 keymap = [
