@@ -17,7 +17,7 @@ layers = 2
 keymap = [
     # Layer 0: Default
     [
-        ["LCtrl(LShift(X))", "F4", "F11"],
+        ["WM(X, LCtrl | LShift)", "F4", "F11"],
         ["PrintScreen", "AudioMute", "Calculator"],
         ["F5", "WwwSearch", "MediaPlayPause"],
         ["MO(1)", "_", "_"]
