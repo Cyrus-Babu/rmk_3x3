@@ -43,6 +43,7 @@ encoder_keymap = [
 pin_a = "GPIO8"
 pin_b = "GPIO9"
 phase = "resolution" 
+resolution = { detent = 30, pulse = 15 }
 
 [ble]
 enabled = true
