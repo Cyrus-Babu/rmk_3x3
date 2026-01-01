@@ -8,7 +8,7 @@ chip = "esp32s3"
 
 [matrix]
 row_pins = ["GPIO1", "GPIO2", "GPIO3", "GPIO4"]
-col_pins = ["GPIO5", "GPIO10", "GPIO11"] 
+col_pins = ["GPIO5", "GPIO6", "GPIO7"] 
 
 [layout]
 rows = 4
@@ -30,21 +30,15 @@ keymap = [
         ["_", "_", "_"]
     ]
 ]
-
-# Encoder Keymap (Moved from [sensor] to here)
-# Structure: [Layer [Encoder [CW, CCW]]]
-encoder_keymap = [
-    # Layer 0: Volume
-    [ ["AudioVolUp", "AudioVolDown"] ],
-    # Layer 1: Brightness
-    [ ["BrightnessUp", "BrightnessDown"] ]
-]
+[[layer]]  # Layer 0
+encoders = [["AudioVolUp", "AudioVolDown"]]
+[[layer]]  # Layer 1
+encoders = [["BrightnessUp", "BrightnessDown"]]
 
 [[input_device.encoder]]
-pin_a = "GPIO6"
-pin_b = "GPIO7"
+pin_a = "GPIO8"
+pin_b = "GPIO9"
 resolution = 2
-]
 
 [ble]
 enabled = true
