@@ -41,8 +41,8 @@ keymap = [
     ]
 ]
 [[input_device.encoder]]
-pin_a = "GPIO6"
-pin_b = "GPIO7"
+pin_a = "GPIO8"
+pin_b = "GPIO9"
 resolution = 2
 [sensor]
  # Usually 2 or 4 pulses per detent
