@@ -39,7 +39,6 @@ encoder_keymap = [
     # Layer 1
     [["BrightnessUp", "BrightnessDown"]]
 ]
-
 [[input_device.encoder]]
 pin_a = "GPIO8"
 pin_b = "GPIO9"
