@@ -7,8 +7,8 @@ manufacturer = "HOOPY"
 chip = "esp32s3"
 
 [matrix]
-row_pins = ["GPIO1", "GPIO2", "GPIO3", "GPIO4"]
-col_pins = ["GPIO5", "GPIO6", "GPIO7"]
+input_pins = ["GPIO1", "GPIO2", "GPIO3", "GPIO4"]
+output_pins = ["GPIO5", "GPIO6", "GPIO7"]
 
 [layout]
 rows = 4
@@ -32,25 +32,13 @@ keymap = [
     ]
 ]
 
-# Layer 0
-[[layer]]
-keys = """
-LCtrl(LShift(X)) F4 F11
-PrintScreen AudioMute Calculator
-F5 WwwSearch MediaPlayPause
-MO(1) _ _
-"""
-encoders = [["AudioVolUp", "AudioVolDown"]]
-
-# Layer 1
-[[layer]]
-keys = """
-_ _ _
-_ _ _
-_ LAlt(F4) _
-_ _ _
-"""
-encoders = [["BrightnessUp", "BrightnessDown"]]
+# Encoder mappings per layer
+encoder_keymap = [
+    # Layer 0
+    [["AudioVolUp", "AudioVolDown"]],
+    # Layer 1
+    [["BrightnessUp", "BrightnessDown"]]
+]
 
 [[input_device.encoder]]
 pin_a = "GPIO8"
