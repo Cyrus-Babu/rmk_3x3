@@ -42,7 +42,7 @@ encoder_keymap = [
 [[input_device.encoder]]
 pin_a = "GPIO8"
 pin_b = "GPIO9"
-resolution = 2
+phase = "resolution" 
 
 [ble]
 enabled = true
